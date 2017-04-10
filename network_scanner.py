@@ -58,3 +58,13 @@ class NetworkScanner(object):
         subnet = '.'.join(ip.split('.')[:3]) + '.0/24'
         log.info('Subnet is {}'.format(subnet))
         return subnet
+
+
+def main():
+    ns = NetworkScanner()
+    devices = ns.scan_devices()
+    print(devices)
+
+
+if __name__ == '__main__':
+    main()
