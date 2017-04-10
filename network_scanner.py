@@ -54,7 +54,6 @@ class NetworkScanner(object):
 
     def get_subnet(self):
         ip = self.get_local_ip()
-        # log.info('Getting subnet for ip address {}...'.format(ip))
         subnet = '.'.join(ip.split('.')[:3]) + '.0/24'
         log.info('Subnet is {}'.format(subnet))
         return subnet
