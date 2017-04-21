@@ -1,6 +1,5 @@
 # Network Scanner
-`network_scanner` can be used to quickly find devices on your local network. It detects your network subnet and retrieves ip and mac addresses.
-
+`network_scanner` can be used to quickly find devices on your local network. It automatically detects your network subnet, and then retrieves ip and mac addresses on this network.
 ## Usage
 
 Note: This program requires root privileges, so it needs to be run with `sudo`.
